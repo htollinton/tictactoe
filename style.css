@@ -1,0 +1,84 @@
+body{
+    display: grid;
+    grid-template-columns: 15vw 50vw;
+    grid-template-rows: 10vw 50vw 10vw 20vw;
+}
+#container{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    border-style: solid;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+}
+div{
+    border-style: solid;
+    
+}
+
+.left{
+    position: relative;
+    transform: rotate(45deg);
+    top:50%;
+    
+
+ 
+}
+.right{
+    position: relative;
+    transform: rotate(-45deg);
+    top: 50%;
+    
+ 
+
+}
+.nought{
+    border-radius: 50%;
+    border-width: .7vw;
+    position: relative;
+    height:10vw;
+    width:10vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#next-go{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    border-width: 0px;
+    justify-self: center;
+    align-items: center;
+    padding:5vw;
+    
+}
+#restart{
+    grid-column: 2/3;
+    grid-row:3/4;
+    justify-self: center;
+    align-self: center;
+
+    
+}
+#score{
+    grid-column: 2/3;
+    grid-row:4/5;
+    
+}
+#noughts-win, #crosses-win{
+    
+}
+
+form{
+    grid-column: 1/2;
+    grid-row:2/3;
+    justify-self: center;
+    align-self: center;
+}
+#who-is-who{
+    grid-column: 3/4;
+    grid-row:2/3;
+    justify-self: center;
+    align-self: center;
+    border-width: 0px;;
+}
